@@ -8,7 +8,6 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     DownLoadInfo: typeof import('./src/components/DownLoadInfo/index.vue')['default']
-    NutCell: typeof import('@nutui/nutui-taro')['Cell']
     NutNavbar: typeof import('@nutui/nutui-taro')['Navbar']
   }
 }

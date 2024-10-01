@@ -1,0 +1,14 @@
+{
+  "name": "@donwload_mon/qbittorrentapi",
+  "version": "1.0.1",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hzg94/DownLoadInfo.git"
+  },
+  "private": true
+}

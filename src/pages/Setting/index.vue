@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import {ref} from 'vue'
 import { navigateTo} from '@tarojs/taro'
+
 const version = ref("Loading ....")
 
 const JumpPage = (url:string) => {

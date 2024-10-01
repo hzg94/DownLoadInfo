@@ -13,8 +13,6 @@ import {ref} from 'vue'
 import './index.less'
 import DownLoadInfo from '../../components/DownLoadInfo/index.vue'
 
-import {Home,Category,Find,Cart,My} from '@nutui/icons-vue-taro'
-
 const tabSwitch = () => {
 
 }

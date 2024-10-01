@@ -1,4 +1,7 @@
-interface MetadataType {
+import {torrent} from "./index";
+import Request, {ApiResult} from "./utils/Request";
+
+interface MainDataType {
   rid: number,
   full_update?: boolean,
   torrents?: torrentType,
@@ -65,3 +68,25 @@ type ServerStateType = {
   use_alt_speed_limits: boolean,
   use_subcategories: boolean,
 }
+
+
+/**
+ * Get main data
+ * @param {number} rid
+ * @return {ApiResult<string>}
+ */
+const getMainData = (rid: number): ApiResult<MainDataType> => {
+  return Request.request<MainDataType>({
+    method: 'GET',
+    url: '/sync/maindata',
+    params: {
+      rid: rid
+    }
+  })
+}
+
+
+export default {
+  getMainData
+}
+
